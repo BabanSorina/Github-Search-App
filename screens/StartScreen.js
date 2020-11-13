@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { View, Text, StyleSheet, TouchableHighlight, } from 'react-native';
+import { View, Text, StyleSheet, TouchableHighlight,Dimensions } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
-import { styles } from '../styles';
-import { api } from "../../services/api";
+
+import { api } from "../services/api";
 import axios from 'axios';
 import { Button } from 'react-native-elements';
 
@@ -79,3 +79,61 @@ export const StartScreen = ({ navigation }) => {
         </View>
     );
 }
+const styles=StyleSheet.create({
+    container: {
+        paddingRight: 50,
+        paddingLeft: 20,
+    },
+    firstHalf: {
+        alignContent: 'flex-start',
+        // alignItems: 'center',
+        // justifyContent: 'center',
+        paddingTop: 100,
+        paddingBottom: 100
+    },
+    secondHalf: {
+
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    welcome: {
+        fontSize: 50,
+        color: 'red',
+    },
+    text: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: 20,
+
+    },
+    input: {
+        justifyContent: 'center',
+        alignContent: 'center',
+        height: 70,
+        width: Dimensions.get('window').width - 60,
+        maxWidth: 340,
+        paddingHorizontal: 30,
+        paddingVertical: 10,
+        backgroundColor: '#fff',
+        borderRadius: 30,
+        marginBottom: 20,
+    },
+    touchableBtn: {
+        marginRight: 0,
+        padding: 0,
+        width: Dimensions.get('window').width - 60,
+    },
+    btn: {
+
+        justifyContent: 'center',
+        alignContent: 'center',
+        height: 70,
+        width: Dimensions.get('window').width - 60,
+        maxWidth: 320,
+
+        backgroundColor: '#fff',
+        borderRadius: 30,
+        marginBottom: 20,
+
+    },
+})

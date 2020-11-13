@@ -5,10 +5,10 @@ import { View, Text,StyleSheet,Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { TextInput } from 'react-native-gesture-handler';
-//import {userData} from './components/List.js';
+
 import {api} from './services/api.js';
-import {StartScreen} from './components/screens/StartScreen';
-import {ListScreen} from './components/screens/ListScreen';
+import {StartScreen} from './screens/StartScreen';
+import {ListScreen} from './screens/ListScreen';
 
 
 
